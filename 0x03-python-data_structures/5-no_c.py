@@ -6,5 +6,5 @@ def no_c(my_string):
     for letter in my_string:
         if letter != 'C' and letter != 'c':
             result += letter
-            
+
     return result
