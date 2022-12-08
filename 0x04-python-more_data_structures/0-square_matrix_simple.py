@@ -1,10 +1,4 @@
 #!/usr/bin/python
 
 def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for row in matrix:
-        new_row = []
-        for num in row:
-            new_row.append(num * num)
-        new_matrix.append(new_row)
-    return new_matrix
+    return([list(map(lambda x: x*x, row)) for row in matrix])
