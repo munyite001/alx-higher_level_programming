@@ -1,1 +1,2 @@
-SELECT * FROM sys.databases;
+-- lIST ALL DATABASES
+SHOW DATABASES;
