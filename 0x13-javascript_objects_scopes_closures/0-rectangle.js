@@ -1,4 +1,2 @@
 #!/usr/bin/node
-class Rectangle {
-
-}
+export default class Rectangle {}
