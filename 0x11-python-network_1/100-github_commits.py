@@ -16,7 +16,10 @@ if __name__ == "__main__":
     if response == {}:
         print("None")
     else:
-        for i in range(10):
-            author = response[i].get('author').get('login')
-            sha = response[i].get('sha')
-            print(f"{sha}: {author}")
+        try:
+            for i in range(10):
+                author = response[i].get('author').get('login')
+                sha = response[i].get('sha')
+                print(f"{sha}: {author}")
+        except IndexError:
+            pass
