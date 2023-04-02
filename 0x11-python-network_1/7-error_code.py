@@ -10,5 +10,5 @@ if __name__ == "__main__":
     try:
         r = requests.get(sys.argv[1])
         print(r.text)
-    except requests.exceptions.RequestException as e:
-        print(f"Error code: {e.code}")
+    except requests.exceptions.HTTPError as e:
+        print(f"Error code: {e.response.status_code}")
