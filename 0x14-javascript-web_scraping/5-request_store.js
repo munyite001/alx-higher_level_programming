@@ -7,7 +7,7 @@ const path = process.argv[3];
 
 request(url, (error, body) => {
   if (error) {
-    console.log(err);
+    console.log(error);
   } else {
     fs.writeFile(path, body, 'utf-8');
   }
